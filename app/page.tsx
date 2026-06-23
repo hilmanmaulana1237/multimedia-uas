@@ -178,7 +178,7 @@ export default function Home() {
               name: "Mochamad Fahmi Rizieq",
               nim: "1237050074",
               role: "UI/UX Designer & QA",
-              img: "https://ui-avatars.com/api/?name=Mochamad+Fahmi+Rizieq&background=D9261C&color=fff",
+              img: "/fototim/Fahmi.jpg",
             }
           ].map((member, i) => (
             <div key={i} className="glass-card p-8 flex flex-col items-center text-center group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] hover:border-[#D9261C]/40 relative overflow-hidden">
