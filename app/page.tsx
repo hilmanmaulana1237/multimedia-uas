@@ -11,10 +11,10 @@ export default function Home() {
   const teamReveal = useScrollReveal();
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center max-w-4xl pt-12 md:pt-16 pb-16 md:pb-24 px-4 md:px-6 relative w-full">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D9261C]/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(600px,100vw)] h-[min(600px,100vw)] bg-[#D9261C]/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
 
         <div className="inline-block px-4 py-1.5 rounded-full border border-[#D9261C]/30 bg-[#D9261C]/10 text-[#D9261C] text-sm font-medium mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
           UAS Capstone Project
@@ -34,11 +34,11 @@ export default function Home() {
       </section>
 
       {/* Modules Selection */}
-      <section className="w-full max-w-[1152px] px-6 mb-32 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+      <section className="w-full max-w-[1152px] px-4 md:px-6 mb-20 md:mb-32 z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full">
           {/* Image Module */}
           <Link href="/image" className="group animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <div className="glass-card h-full p-8 flex flex-col transition-all duration-400 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] group-hover:border-[#D9261C]/50">
+            <div className="glass-card h-full p-6 md:p-8 flex flex-col transition-all duration-400 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] group-hover:border-[#D9261C]/50">
               <div className="w-16 h-16 rounded-2xl bg-[#D9261C]/10 text-[#D9261C] flex items-center justify-center mb-6 group-hover:bg-[#D9261C] group-hover:text-white transition-colors duration-300">
                 <ImageIcon size={32} />
               </div>
@@ -54,7 +54,7 @@ export default function Home() {
 
           {/* Audio Module */}
           <Link href="/audio" className="group animate-fade-up" style={{ animationDelay: '0.5s' }}>
-            <div className="glass-card h-full p-8 flex flex-col transition-all duration-400 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] group-hover:border-[#D9261C]/50">
+            <div className="glass-card h-full p-6 md:p-8 flex flex-col transition-all duration-400 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] group-hover:border-[#D9261C]/50">
               <div className="w-16 h-16 rounded-2xl bg-[#D9261C]/10 text-[#D9261C] flex items-center justify-center mb-6 group-hover:bg-[#D9261C] group-hover:text-white transition-colors duration-300">
                 <MusicIcon size={32} />
               </div>
@@ -70,7 +70,7 @@ export default function Home() {
 
           {/* Video Module */}
           <Link href="/video" className="group animate-fade-up" style={{ animationDelay: '0.6s' }}>
-            <div className="glass-card h-full p-8 flex flex-col transition-all duration-400 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] group-hover:border-[#D9261C]/50">
+            <div className="glass-card h-full p-6 md:p-8 flex flex-col transition-all duration-400 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] group-hover:border-[#D9261C]/50">
               <div className="w-16 h-16 rounded-2xl bg-[#D9261C]/10 text-[#D9261C] flex items-center justify-center mb-6 group-hover:bg-[#D9261C] group-hover:text-white transition-colors duration-300">
                 <VideoIcon size={32} />
               </div>
@@ -90,7 +90,7 @@ export default function Home() {
       <section
         ref={processReveal.ref}
         className={clsx(
-          "w-full max-w-[1152px] px-6 mb-32 transition-all duration-1000",
+          "w-full max-w-[1152px] px-4 md:px-6 mb-20 md:mb-32 transition-all duration-1000",
           processReveal.isRevealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
         )}
       >
@@ -99,7 +99,7 @@ export default function Home() {
           <p className="text-[#F7F4EB]/60 max-w-2xl mx-auto">Empat langkah mudah untuk memproses file multimedia Anda secara lokal dengan keamanan terjamin.</p>
         </div>
 
-        <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="relative grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {/* Connector Line */}
           <div className="hidden md:block absolute top-8 left-1/8 right-1/8 h-[1px] bg-gradient-to-r from-transparent via-[#D9261C]/30 to-transparent -z-10"></div>
 
@@ -124,7 +124,7 @@ export default function Home() {
       <section
         ref={featuresReveal.ref}
         className={clsx(
-          "w-full max-w-[1152px] px-6 mb-24 transition-all duration-1000",
+          "w-full max-w-[1152px] px-4 md:px-6 mb-24 transition-all duration-1000",
           featuresReveal.isRevealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
         )}
       >
@@ -157,7 +157,7 @@ export default function Home() {
       <section
         ref={teamReveal.ref}
         className={clsx(
-          "w-full max-w-[1152px] px-6 mb-24 transition-all duration-1000",
+          "w-full max-w-[1152px] px-4 md:px-6 mb-24 transition-all duration-1000",
           teamReveal.isRevealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
         )}
       >

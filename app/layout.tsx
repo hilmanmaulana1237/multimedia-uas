@@ -35,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} h-full antialiased dark`}>
-      <body className="min-h-full flex flex-col font-sans relative overflow-x-hidden">
+    <html lang="id" className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} h-full antialiased dark overflow-x-hidden`}>
+      <body className="min-h-full flex flex-col font-sans relative overflow-x-hidden w-full max-w-[100vw]">
         <Navbar />
         <main className="flex-grow pt-24 pb-12">
           {children}
