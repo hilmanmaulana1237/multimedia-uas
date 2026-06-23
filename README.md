@@ -1,21 +1,8 @@
 <div align="center">
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-bottom: 20px;">
-    <div align="center" style="display: inline-block; margin: 0 15px;">
-      <img src="./public/fototim/Hilman.jpg" alt="Hilman Maulana" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 3px solid #38B2AC;" />
-      <br/><b>Hilman Maulana</b>
-    </div>
-    <div align="center" style="display: inline-block; margin: 0 15px;">
-      <img src="./public/fototim/Fahmi.jpg" alt="Mochamad Fahmi Rizieq" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 3px solid #38B2AC;" />
-      <br/><b>Mochamad Fahmi</b>
-    </div>
-  </div>
-
-  <br/>
-
   <img src="./public/logo.png" alt="StegoForge Logo" width="100" />
   <h1>StegoForge</h1>
   <p><b>Multimedia Studio untuk Kompresi & Steganografi Berbasis Web</b></p>
-  
+
   [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](#)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](#)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](#)
@@ -24,6 +11,30 @@
 
 ---
 
+## 👨‍💻 Tim Pengembang
+
+Proyek kolaboratif ini dibangun dan dirancang oleh mahasiswa program studi **Informatika — Kelas 6B, UIN Sunan Gunung Djati Bandung**:
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="300">
+      <img src="./public/fototim/Hilman.jpg" alt="Hilman Maulana" width="140" height="140" style="border-radius: 50%;" /><br/>
+      <b>Hilman Maulana</b><br/>
+      <sub>NIM: 1237050020</sub><br/><br/>
+      <sub>Fullstack Developer, Arsitek Infrastruktur FFmpeg & Logika Codec Steganografi</sub>
+    </td>
+    <td align="center" width="300">
+      <img src="./public/fototim/Fahmi.jpg" alt="Mochamad Fahmi Rizieq" width="140" height="140" style="border-radius: 50%;" /><br/>
+      <b>Mochamad Fahmi Rizieq</b><br/>
+      <sub>NIM: 1237050074</sub><br/><br/>
+      <sub>UI/UX Designer, Tim Penguji QA (Quality Assurance) & Peneliti Multimedia</sub>
+    </td>
+  </tr>
+</table>
+</div>
+
+---
 
 ## 📖 Tentang Proyek
 
@@ -88,16 +99,6 @@ Pastikan sistem operasi Anda telah terpasang perangkat **Node.js** (versi 18 ke 
 
 ---
 
-## 👨‍💻 Tim Pengembang
-
-Proyek kolaboratif ini dibangun dan dirancang oleh mahasiswa program studi **Informatika - Kelas 6B, UIN Sunan Gunung Djati Bandung**:
-
-| Nama Lengkap | NIM | Peran Utama |
-|--------------|:---:|-------------|
-| **Hilman Maulana** | `1237050020` | Fullstack Developer, Arsitek Infrastruktur FFmpeg & Logika Codec Steganografi |
-| **Mochamad Fahmi Rizieq** | `1237050074` | UI/UX Designer, Tim Penguji QA (*Quality Assurance*) & Peneliti Multimedia |
-
-<br/>
 <div align="center">
   <sub>Dibuat dengan ❤️ di Bandung, Indonesia.</sub>
 </div>
