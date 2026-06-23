@@ -95,15 +95,15 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={clsx(
-          "md:hidden absolute top-full left-0 right-0 glass-heavy border-t border-[#F7F4EB]/10 transition-all duration-300 overflow-hidden",
-          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 border-transparent"
+          "md:hidden absolute top-full left-0 right-0 glass-heavy border-t border-[#F7F4EB]/10 transition-all duration-300 overflow-hidden shadow-2xl",
+          isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 border-transparent"
         )}
       >
-        <div className="p-4 flex flex-col gap-2">
+        <div className="p-6 flex flex-col gap-3">
           <Link
             href="/"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="p-3 rounded-lg hover:bg-[#F7F4EB]/10 text-sm font-medium transition-colors"
+            className="p-3 rounded-xl hover:bg-[#F7F4EB]/10 text-base font-medium transition-colors"
           >
             Beranda
           </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={clsx(
-                  "p-3 rounded-lg flex items-center gap-3 text-sm font-medium transition-colors",
+                  "p-3 rounded-xl flex items-center gap-4 text-base font-medium transition-colors",
                   active ? "bg-[#D9261C]/20 text-[#D9261C]" : "hover:bg-[#F7F4EB]/10 text-[#F7F4EB]/80"
                 )}
               >
@@ -130,7 +130,7 @@ export default function Navbar() {
             href="https://github.com/hilmanmaulana1237/multimedia-uas"
             target="_blank"
             rel="noreferrer"
-            className="p-3 rounded-lg hover:bg-[#F7F4EB]/10 text-sm font-medium transition-colors flex justify-between items-center"
+            className="p-3 rounded-xl hover:bg-[#F7F4EB]/10 text-base font-medium transition-colors flex justify-between items-center"
           >
             GitHub <Code size={16} />
           </a>

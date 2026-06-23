@@ -13,21 +13,21 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center max-w-4xl pt-12 pb-24 px-6 relative w-full">
+      <section className="flex flex-col items-center justify-center text-center max-w-4xl pt-12 md:pt-16 pb-16 md:pb-24 px-4 md:px-6 relative w-full">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D9261C]/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
 
         <div className="inline-block px-4 py-1.5 rounded-full border border-[#D9261C]/30 bg-[#D9261C]/10 text-[#D9261C] text-sm font-medium mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
           UAS Capstone Project
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-display font-bold text-white tracking-tight mb-8 leading-[1.1] animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-white tracking-tight mb-6 md:mb-8 leading-[1.1] md:leading-[1.1] animate-fade-up" style={{ animationDelay: '0.2s' }}>
           Stego<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9261C] to-[#9D1A10]">Forge</span> <br />
-          <span className="text-3xl md:text-5xl text-[#F7F4EB]/80 font-medium">
+          <span className="text-2xl sm:text-3xl md:text-5xl text-[#F7F4EB]/80 font-medium mt-2 block">
             Media Studio
           </span>
         </h1>
 
-        <p className="text-lg text-[#F7F4EB]/70 max-w-2xl mx-auto mb-12 animate-fade-up leading-relaxed" style={{ animationDelay: '0.3s' }}>
+        <p className="text-base md:text-lg text-[#F7F4EB]/70 max-w-2xl mx-auto mb-10 md:mb-12 animate-fade-up leading-relaxed px-2" style={{ animationDelay: '0.3s' }}>
           Platform pemrosesan multimedia berbasis web yang mendukung kompresi, dekompresi,
           dan penyisipan pesan rahasia (steganografi) yang diproses 100% di browser Anda.
         </p>
@@ -197,17 +197,17 @@ export default function Home() {
       </section>
 
       {/* Stats Banner */}
-      <section className="w-full bg-gradient-to-r from-[#0B0E11] via-[#D9261C]/10 to-[#0B0E11] py-16 border-y border-[#F7F4EB]/5">
-        <div className="max-w-[1152px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <section className="w-full bg-gradient-to-r from-[#0B0E11] via-[#D9261C]/10 to-[#0B0E11] py-12 md:py-16 border-y border-[#F7F4EB]/5">
+        <div className="max-w-[1152px] mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
           {[
-            { value: "100%", label: "Client-Side Processing" },
-            { value: "3", label: "Media Modul (Image, Audio, Video)" },
-            { value: "15+", label: "Format Didukung" },
-            { value: "0", label: "Server Storage Digunakan" },
+            { value: "100%", label: "Client-Side" },
+            { value: "3", label: "Media Modul" },
+            { value: "15+", label: "Format Support" },
+            { value: "0", label: "Server Storage" },
           ].map((stat, i) => (
-            <div key={i}>
-              <div className="text-4xl font-display font-bold text-white mb-2">{stat.value}</div>
-              <div className="text-sm text-[#D9261C] font-medium tracking-wide">{stat.label}</div>
+            <div key={i} className="flex flex-col items-center justify-center p-2">
+              <div className="text-3xl md:text-4xl font-display font-bold text-white mb-1 md:mb-2">{stat.value}</div>
+              <div className="text-xs md:text-sm text-[#D9261C] font-medium tracking-wider uppercase">{stat.label}</div>
             </div>
           ))}
         </div>
