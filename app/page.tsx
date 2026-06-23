@@ -170,13 +170,15 @@ export default function Home() {
           {[
             {
               name: "Hilman Maulana",
+              nim: "1237050020",
               role: "Fullstack Developer",
               img: "/fototim/Hilman.jpg",
             },
             {
               name: "Mochamad Fahmi Rizieq",
-              role: "Backend Engineer",
-              img: "/fototim/Fahmi.jpg",
+              nim: "1237050074",
+              role: "UI/UX Designer & QA",
+              img: "https://ui-avatars.com/api/?name=Mochamad+Fahmi+Rizieq&background=D9261C&color=fff",
             }
           ].map((member, i) => (
             <div key={i} className="glass-card p-8 flex flex-col items-center text-center group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(217,38,28,0.15)] hover:border-[#D9261C]/40 relative overflow-hidden">
@@ -187,6 +189,7 @@ export default function Home() {
               </div>
 
               <h3 className="text-xl font-display font-semibold text-white mb-1 group-hover:text-[#D9261C] transition-colors">{member.name}</h3>
+              <p className="text-sm font-mono text-[#F7F4EB]/60 mb-3">{member.nim}</p>
               <p className="text-sm font-medium text-[#F7F4EB]/80 bg-[#D9261C]/10 px-3 py-1 rounded-full border border-[#D9261C]/20 inline-block">{member.role}</p>
             </div>
           ))}
