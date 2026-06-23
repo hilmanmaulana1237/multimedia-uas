@@ -1,5 +1,18 @@
 <div align="center">
-  <img src="./public/logo.png" alt="StegoForge Logo" width="120" />
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-bottom: 20px;">
+    <div align="center" style="display: inline-block; margin: 0 15px;">
+      <img src="./public/fototim/Hilman.jpg" alt="Hilman Maulana" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 3px solid #38B2AC;" />
+      <br/><b>Hilman Maulana</b>
+    </div>
+    <div align="center" style="display: inline-block; margin: 0 15px;">
+      <img src="./public/fototim/Fahmi.jpg" alt="Mochamad Fahmi Rizieq" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 3px solid #38B2AC;" />
+      <br/><b>Mochamad Fahmi</b>
+    </div>
+  </div>
+
+  <br/>
+
+  <img src="./public/logo.png" alt="StegoForge Logo" width="100" />
   <h1>StegoForge</h1>
   <p><b>Multimedia Studio untuk Kompresi & Steganografi Berbasis Web</b></p>
   
@@ -9,7 +22,8 @@
   [![FFmpeg.wasm](https://img.shields.io/badge/FFmpeg.wasm-0.12-green?style=for-the-badge&logo=ffmpeg)](#)
 </div>
 
-<br/>
+---
+
 
 ## 📖 Tentang Proyek
 
