@@ -21,9 +21,9 @@ export default function Home() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-display font-bold text-white tracking-tight mb-8 leading-[1.1] animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          Multimedia Codec <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9261C] to-[#9D1A10]">
-            & Steganography
+          Stego<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9261C] to-[#9D1A10]">Forge</span> <br />
+          <span className="text-3xl md:text-5xl text-[#F7F4EB]/80 font-medium">
+            Media Studio
           </span>
         </h1>
 
@@ -187,16 +187,7 @@ export default function Home() {
               </div>
 
               <h3 className="text-xl font-display font-semibold text-white mb-1 group-hover:text-[#D9261C] transition-colors">{member.name}</h3>
-              <p className="text-sm font-medium text-[#F7F4EB]/80 mb-6 bg-[#D9261C]/10 px-3 py-1 rounded-full border border-[#D9261C]/20 inline-block">{member.role}</p>
-
-              <div className="flex items-center gap-4 mt-auto">
-                <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-[#F7F4EB]/60 hover:text-white hover:bg-[#D9261C] hover:border-[#D9261C] transition-all">
-                  <Globe size={18} />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-[#F7F4EB]/60 hover:text-white hover:bg-[#D9261C] hover:border-[#D9261C] transition-all">
-                  <Mail size={18} />
-                </a>
-              </div>
+              <p className="text-sm font-medium text-[#F7F4EB]/80 bg-[#D9261C]/10 px-3 py-1 rounded-full border border-[#D9261C]/20 inline-block">{member.role}</p>
             </div>
           ))}
         </div>

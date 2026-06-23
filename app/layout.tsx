@@ -22,8 +22,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Capstone Codec & Steganography",
+  title: "StegoForge | Multimedia Studio",
   description: "UAS Capstone Project - Multimedia Codec & Steganography",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({

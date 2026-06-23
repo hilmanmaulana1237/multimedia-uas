@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-[1152px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="text-left">
           <p className="font-display font-semibold text-lg tracking-wider text-white">
-            CODEC STEGO
+            STEGOFORGE
           </p>
           <p className="text-sm text-[#F7F4EB]/60 mt-1">
             UAS Capstone Project - Multimedia

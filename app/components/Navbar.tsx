@@ -39,11 +39,11 @@ export default function Navbar() {
       <div className="max-w-[1152px] mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#9D1A10] to-[#D9261C] flex items-center justify-center group-hover:shadow-[0_0_15px_rgba(217,38,28,0.5)] transition-all">
-            <span className="text-white font-bold text-xs tracking-wider">CS</span>
+          <div className="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center group-hover:shadow-[0_0_15px_rgba(217,38,28,0.5)] transition-all border border-[#F7F4EB]/10">
+            <img src="/logo.png" alt="StegoForge" className="w-full h-full object-cover" />
           </div>
           <span className="font-display font-semibold text-lg tracking-wider hidden sm:block group-hover:text-[#F7F4EB] transition-colors">
-            CODEC STEGO
+            STEGOFORGE
           </span>
         </Link>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
         {/* Desktop Right */}
         <div className="hidden md:flex items-center">
           <a
-            href="https://github.com"
+            href="https://github.com/hilmanmaulana1237/multimedia-uas"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-[#F7F4EB]/70 hover:text-white transition-colors group"
@@ -127,7 +127,7 @@ export default function Navbar() {
           })}
           <div className="h-[1px] bg-[#F7F4EB]/10 my-2" />
           <a
-            href="https://github.com"
+            href="https://github.com/hilmanmaulana1237/multimedia-uas"
             target="_blank"
             rel="noreferrer"
             className="p-3 rounded-lg hover:bg-[#F7F4EB]/10 text-sm font-medium transition-colors flex justify-between items-center"
