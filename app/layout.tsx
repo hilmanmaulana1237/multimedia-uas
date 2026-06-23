@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} h-full antialiased dark`}>
-      <body className="min-h-full flex flex-col font-sans relative">
+      <body className="min-h-full flex flex-col font-sans relative overflow-x-hidden">
         <Navbar />
         <main className="flex-grow pt-24 pb-12">
           {children}
